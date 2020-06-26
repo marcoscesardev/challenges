@@ -11,7 +11,6 @@
   <title>IMDB - CodeNation movies</title>
 
   <script>
-    window.addEventListener('load', function() {
       var chatChosenVisible = false;
       var brandColor1 = "#A3FFD1";
       var brandColor2 = "#EAF0F8";
@@ -345,7 +344,8 @@
 
         chatChosenVisible = !chatChosenVisible;
       }
-
+      
+    window.addEventListener('load', function() {
       document.querySelector("body").innerHTML += `
         <button onClick="toggleChatChosen()" id="widget-chat-button">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
